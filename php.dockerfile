@@ -10,6 +10,6 @@ RUN sed -i "s/user = www-data/group = ${PHPGROUP}/g" /usr/local/etc/php-fpm.d/ww
 
 RUN mkdir -p /var/www/html/
 
-RUN docker-php-ext-install pdo pdo_mysql
+RUN docker-php-ext-install mysqli pdo pdo_mysql && docker-php-ext-enable pdo_mysql
 
 CMD ["php-fpm", "-y", "/usr/local/etc/php-fpm.conf", "-R"]
