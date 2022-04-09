@@ -82,7 +82,8 @@ _Below is an example of how you can instruct your audience on installing and set
 <!-- ROADMAP -->
 ## Roadmap
 
-- [x] Add Additional Templates w/ Examples
+- [x] Fix docker compose issues
+- [ ] Tell users how to use docker-compose-custom.yml
 - [ ] Multi-language Support
     - [ ] Chinese
 
